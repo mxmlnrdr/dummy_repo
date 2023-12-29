@@ -1,0 +1,18 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+exclude: |
+  (?x)^(
+      venv/|
+  )$
+
+repos:
+  - repo: https://github.com/mxmlnrdr/clang_tidy_hook
+    rev: 88992abd2ebce6517a1bd87037de6d852b5d0e21
+    hooks:
+      - id: clang-tidy
+        name: clang-tidy
+        description: Find warnings/errors in C, C++, and Objective-C code
+        entry: clang-tidy-hook
+        language: python
+        types_or: [c, c++, c#, objective-c]
+
