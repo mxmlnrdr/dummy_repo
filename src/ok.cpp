@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 
-#include "include/ok.h"
+#include "include/dummy_project/ok.h"
 
 int main() {
   std::cout << "Hello World!" << std::endl;

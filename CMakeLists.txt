@@ -7,11 +7,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCE_FILES
-    ${CMAKE_CURRENT_SOURCE_DIR}/err.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/ok.cpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/err.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/ok.cpp)
 
 add_library(DummyProject STATIC ${SOURCE_FILES})
 
 target_include_directories(
   DummyProject
-  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/include)
+  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/src/include/dummy_project)
