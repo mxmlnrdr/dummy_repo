@@ -7,7 +7,7 @@ exclude: |
 
 repos:
   - repo: https://github.com/mxmlnrdr/clang_tidy_hook
-    rev: 88992abd2ebce6517a1bd87037de6d852b5d0e21
+    rev: v0.1.0
     hooks:
       - id: clang-tidy
         name: clang-tidy
