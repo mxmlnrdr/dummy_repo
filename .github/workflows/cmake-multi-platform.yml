@@ -78,4 +78,4 @@ jobs:
     - name: Execute pre-commit hooks on all error-free files
       run: |
         pre-commit install
-        pre-commit run --files ok.cpp include/ok.h 
+        pre-commit run --files src/ok.cpp src/include/dummy_project/ok.h 
