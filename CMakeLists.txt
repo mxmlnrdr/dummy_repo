@@ -14,4 +14,4 @@ add_library(DummyProject STATIC ${SOURCE_FILES})
 
 target_include_directories(
   DummyProject
-  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/src/include/dummy_project)
+  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/src/include)
